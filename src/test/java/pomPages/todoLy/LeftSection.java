@@ -11,15 +11,15 @@ public class LeftSection {
     public TextBox nameProjectTextBox = new TextBox(By.xpath("//input[@id='NewProjNameInput']"));
 
     //-----ACTUALIZAR
-     public Button selectProject = new Button(By.xpath("//li[last()]//td[@class='ProjItemContent']"));
-     public Button options= new Button(By.xpath("//div[@style='display: block;']/img[@src='/Images/dropdown.png']"));
-     public Button selectEditButton = new Button(By.xpath("//ul[@id='projectContextMenu']//a[contains(.,'Edit')]"));
-     public TextBox editNameProject = new TextBox(By.id("ItemEditTextbox"));
-     public Button saveNewName = new Button(By.xpath("//li//div[@id='ProjectEditDiv']/*[@id=\"ItemEditSubmit\"]"));
+    public Button selectProject = new Button(By.xpath("//li[last()]//td[contains(.,'LizNUEVO2') and @class='ProjItemContent']"));
+    public Button options = new Button(By.xpath("//div[@style='display: block;']/img[@src='/Images/dropdown.png']"));
+    public Button selectEditButton = new Button(By.xpath("//ul[@id='projectContextMenu']//a[contains(.,'Edit')]"));
+    public TextBox editNameProject = new TextBox(By.id("ItemEditTextbox"));
+    public Button saveNewName = new Button(By.xpath("//li//div[@id='ProjectEditDiv']/*[@id=\"ItemEditSubmit\"]"));
 
-     //--------ELIMINA
+    //--------ELIMINAR
+    public Button selectProjectUp = new Button(By.xpath("//li[last()]//td[contains(.,'Crud') and @class='ProjItemContent']"));
     public Button selectDeleteButton = new Button(By.xpath("//ul[@id='projectContextMenu']//a[contains(.,'Delete')]"));
-
 
 
     public LeftSection() {
@@ -27,3 +27,4 @@ public class LeftSection {
 
     }
 }
+

@@ -48,13 +48,13 @@ public class CrudLiz {
         Assert.assertEquals("El proyecto no fue actualizado",nameUp,centerSection.projectNameLabel.getText());
 
         //ELIMINA PROYECTO
-        //leftSection.selectProject.click();
-        //leftSection.options.click();
-        //leftSection.selectDeleteButton.click();
-        //Session.getSession().getDriver().switchTo().alert().accept();
+        leftSection.selectProjectUp.click();
+        leftSection.options.click();
+        leftSection.selectDeleteButton.click();
+        Session.getSession().getDriver().switchTo().alert().accept();
 
-       // Thread.sleep(2000);
-        //Assert.assertFalse("No borro el proyecto");
+       Thread.sleep(3000);
+       // Assert.assertFalse("No borro el proyecto");
 
     }
 
