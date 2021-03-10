@@ -1,9 +1,8 @@
-package cleanCrud;
+package cleanCrudProject;
 
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
-import org.openqa.selenium.Alert;
 import pomPages.todoLy.CenterSection;
 import pomPages.todoLy.LeftSection;
 import pomPages.todoLy.LoginModal;

@@ -10,7 +10,7 @@ public class Session {
 
     private Session(){
 
-        this.driver= FactoryBrowser.make("chrome").create();
+        this.driver= FactoryBrowser.make("firefox").create();
     }
 
     public static Session getSession(){

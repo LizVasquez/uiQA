@@ -27,10 +27,10 @@ public class Control {
         this.control.clear();
     }
 
-    public void set(String value){
+    /*public void set(String value){
         this.findControl();
         this.control.sendKeys(value);
-    }
+    }*/
 
     public void dobleClick(){
         this.findControl();
@@ -54,6 +54,12 @@ public class Control {
     public String getAttributeValue(String attribute){
         this.findControl();
         return this.control.getAttribute(attribute);
+    }
+
+    public void set(String value){
+        this.findControl();
+        this.control.clear();
+        this.control.sendKeys(value);
     }
 }
 

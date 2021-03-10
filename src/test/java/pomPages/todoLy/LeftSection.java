@@ -22,7 +22,18 @@ public class LeftSection {
     public Button selectDeleteButton = new Button(By.xpath("//ul[@id='projectContextMenu']//a[contains(.,'Delete')]"));
 
 
+    //--------------------------ITEM----------------------------------------
+    public Button select = new Button(By.xpath("//div[@id='ItemId_3896867']"));
+
+
+
+
     public LeftSection() {
+
+        /*public void clickOnProject(String nameProject){
+            Label projectInList= new Label(By.xpath("//li[last()]//td[contains(.,'"+nameProject+"') and @class='ProjItemContent']"));
+            projectInList.click();
+        }*/
 
 
     }
